@@ -1,0 +1,173 @@
+
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #000000;
+    --accent-color:  #2196F3;
+    --primary-white-color: #ffffff;
+    --secondary-text-color: #757575;
+    --hero-bakcground: #2F303A;
+}
+body {
+
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color) ;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+
+}
+
+.list{
+    list-style: none;
+}
+/* Logo */
+.logo{
+    color: var(--title-text-color);
+    font-size: 26px;
+    line-height: 31px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+/* Site nav */
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link-current {
+    color: var(--accent-color);
+}
+/* Site adr */
+.site-adr .link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+}
+.site-adr .link:hover,
+.site-adr .link:focus {
+    color: var(--accent-color);
+}
+
+.site-adr .link-current {
+    color: var(--accent-color);
+}
+/* Hero */
+.hero {
+    background: var(--hero-bakcground);
+}
+
+.hero-title {
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+}
+/* Section */
+
+.section-title {
+    color: var(--title-text-color);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/* characteristics (features) */
+/* Examples (work)*/
+
+.characteristics-list .title,
+.specialisation-list .title {
+    color:  var(--title-text-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.characteristics-list .link{
+    color: var(--accent-color);
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/* Title */
+.title{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+/* Paragraph */
+.paragraph{
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+/* Button */
+
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+    cursor: pointer;
+    /**/
+     border-radius: 6px; 
+    padding: 11px 34px;
+    display: inline-block;
+    min-width: 130px;
+}
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+  border-color: var(--accent-color);
+}
+/* address */
+.address{
+    font-style: normal;
+    background: var(--hero-bakcground);
+    color: var(--primary-white-color);
+}
+/* footer adr */
+.footer-adr .link {
+    color: var(--primary-white-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.footer-adr .link:hover,
+.footer-adr .link:focus {
+    color: var(--accent-color);
+}
+
+.footer-adr .link-current {
+    color: var(--accent-color);
+}
+.logo-color{
+    color: var(--accent-color);
+}
