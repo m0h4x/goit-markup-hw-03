@@ -20,6 +20,8 @@ body {
 
 .list{
     list-style: none;
+        display: flex;
+ 
 }
 /* Logo */
 .logo{
@@ -37,6 +39,8 @@ body {
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
+
+
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -94,6 +98,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    
 }
 
 .characteristics-list .link{
@@ -159,15 +164,34 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+
 }
-.footer-adr .link:hover,
-.footer-adr .link:focus {
-    color: var(--accent-color);
-}
+
 
 .footer-adr .link-current {
     color: var(--accent-color);
 }
 .logo-color{
     color: var(--accent-color);
+}
+
+/* por-sel */
+.por-sel .link {
+    color: var(--primary-white-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+}
+.por-sel .link:hover,
+.por-sel .link:focus {
+    color: var(--accent-color);
+}
+
+.por-sel .link-current {
+    color: var(--accent-color);
+}
+.card-set{  
+    list-style: none;
+    display: flex;
 }
