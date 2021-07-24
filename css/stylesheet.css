@@ -56,6 +56,7 @@ body {
 /* Site adr */
 .site-adr{
     display: flex;
+     margin-left: auto;
 }
 .site-adr .link {
     color: var(--secondary-text-color);
@@ -89,6 +90,7 @@ body {
 .hero {
     background: var(--hero-bakcground);
       text-align: center;
+        padding: 200px 0;
 }
 
 .hero-title {
@@ -211,6 +213,7 @@ body {
 /* por-sel */
 .por-sel{
        display: flex;
+       
        
 }
 .por-sel .link {
