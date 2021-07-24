@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>goit-markup-hw-01</title>
-
+    <!-- Сначала нормализатор -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!-- Потом ваши стили -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +23,7 @@
     <!-- Шапка сайта -->
     <header>
         <div class="container">
-            <nav>
+            <nav class="nav-flex">
                 <a href="./index.html" class="logo">
                     <span class="logo-color">Web</span>Studio
                 </a>
@@ -86,7 +89,7 @@
             <!-- Команда -->
             <section class="section">
                 <h2 class="section-title">Наша команда</h2>
-                <ul class="list">
+                <ul class="team-list list">
                     <li><img src="./images/face1.jpg" alt="face1" width="250">
                         <h3 class="title">Игорь Демьяненко</h3>
                         <p class="paragraph">Product Designer</p>
@@ -108,10 +111,11 @@
         </div>
     </main><!-- Футер -->
     <footer>
-        <a href="/" class="logo">
-            <span class="logo-color">Web</span>Studio
-        </a>
+
         <address class="address">
+            <a href="/" class="logo">
+                <span class="logo-color">Web</span><span class="logo-second-color">Studio</span>
+            </a>
             <ul class="footer-adr list">
 
                 <li><a class="link" href="">г. Киев, пр-т Леси Украинки, 26</a></li>

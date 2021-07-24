@@ -20,7 +20,7 @@ body {
 
 .list{
     list-style: none;
-        display: flex;
+        /* display: flex; */
  
 }
 /* Logo */
@@ -39,8 +39,9 @@ body {
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
-
-
+}
+.site-nav{
+    display: flex;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -51,6 +52,9 @@ body {
     color: var(--accent-color);
 }
 /* Site adr */
+.site-adr{
+    display: flex;
+}
 .site-adr .link {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -65,6 +69,13 @@ body {
 
 .site-adr .link-current {
     color: var(--accent-color);
+}
+/* Header container */
+.container{
+    display: flex;
+}
+.nav-flex{
+    display: flex;
 }
 /* Hero */
 .hero {
@@ -90,7 +101,11 @@ body {
 
 /* characteristics (features) */
 /* Examples (work)*/
-
+.characteristics-list,
+.specialisation-list,
+.team-list{
+    display: flex;
+}
 .characteristics-list .title,
 .specialisation-list .title {
     color:  var(--title-text-color);
@@ -174,14 +189,21 @@ body {
 .logo-color{
     color: var(--accent-color);
 }
+.logo-second-color{
+    color: var(--primary-white-color);
+}
 
 /* por-sel */
+.por-sel{
+       display: flex;
+}
 .por-sel .link {
     color: var(--primary-white-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
+    
 }
 .por-sel .link:hover,
 .por-sel .link:focus {
@@ -194,4 +216,6 @@ body {
 .card-set{  
     list-style: none;
     display: flex;
+    /* flex-basis: calc((100% - 30px) / 3); */
 }
+
