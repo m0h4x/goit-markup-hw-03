@@ -6,6 +6,7 @@
     --primary-white-color: #ffffff;
     --secondary-text-color: #757575;
     --hero-bakcground: #2F303A;
+    --por-sel-background: #F5F4FA;
 }
 body {
 
@@ -21,7 +22,8 @@ body {
 .list{
     list-style: none;
         /* display: flex; */
- 
+   /* padding: 0;
+  margin: 0; */
 }
 /* Logo */
 .logo{
@@ -73,6 +75,12 @@ body {
 /* Header container */
 .container{
     display: flex;
+    width: 1200px;
+      margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .nav-flex{
     display: flex;
@@ -80,6 +88,7 @@ body {
 /* Hero */
 .hero {
     background: var(--hero-bakcground);
+      text-align: center;
 }
 
 .hero-title {
@@ -90,7 +99,10 @@ body {
     text-align: center;
 }
 /* Section */
-
+.section {
+      padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
     color: var(--title-text-color);
     font-weight: bold;
@@ -159,12 +171,15 @@ body {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border: none;
+     border: 1px solid transparent;
 }
 
 .button.secondary {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
-  border-color: var(--accent-color);
+  color: var(--primary-text-color);
+  background-color: var(--por-sel-background);
+  /* border-color: var(--accent-color); */
+  border: none;
+   border: 1px solid transparent;
 }
 /* address */
 .address{
@@ -196,6 +211,7 @@ body {
 /* por-sel */
 .por-sel{
        display: flex;
+       
 }
 .por-sel .link {
     color: var(--primary-white-color);
