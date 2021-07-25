@@ -21,7 +21,7 @@
 <body>
 
     <!-- Шапка сайта -->
-    <header>
+    <header class="header">
         <div class="container main-nav">
             <nav class="nav-flex">
                 <a href="./index.html" class="logo">
@@ -29,7 +29,7 @@
                 </a>
 
                 <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link-current">Студия</a></li>
+                    <li class="item"><a href="./index.html" class="link-current link">Студия</a></li>
                     <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                     <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
@@ -46,15 +46,18 @@
 
         <div>
             <!-- Герой -->
-            <div class="container">
-                <section class="hero">
+
+            <section class="hero">
+                <div class="container">
                     <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                     <button type="button" class="button primary">Заказать услугу</button>
-                </section>
-            </div>
+                </div>
+            </section>
+
             <!-- Характеристики -->
-            <div class="container">
-                <section class="section">
+
+            <section class="section">
+                <div class="container">
                     <h2 class="section-title"></h2>
                     <ul class="characteristics-list list">
                         <li>
@@ -79,47 +82,59 @@
                                 заданий.</p>
                         </li>
                     </ul>
+                </div>
+            </section>
 
-                </section>
-            </div>
-            <div class="container">
-                <!-- Специализация -->
-                <section class="section">
+
+            <!-- Специализация -->
+            <section class="section spec-sec">
+                <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="specialisation-list list">
                         <li><img src="./images/box1.jpg" alt="box1" width="300"></li>
                         <li><img src="./images/img2.jpg" alt="img2" width="300"></li>
                         <li><img src="./images/img3.jpg" alt="img3" width="300"></li>
                     </ul>
-                </section>
-            </div>
+                </div>
+            </section>
+
             <!-- Команда -->
-            <div class="container">
-                <section class="section">
+
+            <section class="section par-sec">
+                <div class="container">
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="team-list list">
-                        <li><img src="./images/face1.jpg" alt="face1" width="250">
-                            <h3 class="title">Игорь Демьяненко</h3>
-                            <p class="paragraph">Product Designer</p>
+                        <li class="team-list-item"><img src="./images/face1.jpg" alt="face1" width="270">
+                            <div class="team-list-description">
+                                <h3 class="title">Игорь Демьяненко</h3>
+                                <p class="paragraph">Product Designer</p>
+                            </div>
                         </li>
-                        <li><img src="./images/face2.jpg" alt="face2" width="250">
-                            <h3 class="title">Ольга Репина</h3>
-                            <p class="paragraph">Frontend Developer</p>
+                        <li class="team-list-item"><img src="./images/face2.jpg" alt="face2" width="270">
+                            <div class="team-list-description">
+                                <h3 class="title">Ольга Репина</h3>
+                                <p class="paragraph">Frontend Developer</p>
+                            </div>
                         </li>
-                        <li><img src="./images/face3.jpg" alt="face3" width="250">
-                            <h3 class="title">Николай Тарасов</h3>
-                            <p class="paragraph">Marketing</p>
+                        <li class="team-list-item"><img src="./images/face3.jpg" alt="face3" width="270">
+                            <div class="team-list-description">
+                                <h3 class="title">Николай Тарасов</h3>
+                                <p class="paragraph">Marketing</p>
+                            </div>
                         </li>
-                        <li><img src="./images/face4.jpg" alt="face4" width="250">
-                            <h3 class="title">Михаил Ермаков</h3>
-                            <p class="paragraph">UI Designer</p>
+                        <li class="team-list-item"><img src="./images/face4.jpg" alt="face4" width="270">
+                            <div class="team-list-description">
+                                <h3 class="title">Михаил Ермаков</h3>
+                                <p class="paragraph">UI Designer</p>
+                            </div>
                         </li>
                     </ul>
-                </section>
-            </div>
+                </div>
+            </section>
+
         </div>
     </main><!-- Футер -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <address class="address">
                 <a href="/" class="logo">

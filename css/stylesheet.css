@@ -18,44 +18,56 @@ body {
     font-size: 14px;
 
 }
+ h1,
+h2,
+h3,
+p{
+    padding: 0;
+    margin: 0;
+}
 .list{
     list-style: none;
         /* display: flex; */
-   /* padding: 0;
-  margin: 0; */
+   padding: 0;
+  margin: 0; 
 }
 /* Logo */
 .logo{
     color: var(--title-text-color);
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
     display: block;
 }
 
 /* Site nav */
 .site-nav{
     display: flex;
+        align-items: center;
+        margin-left: 90px;
 }
 .site-nav .item,
 .site-adr .item {
     margin-right: 40px;
 }
 .site-nav .item:last-child,
-.site-adr .item:last-child {
+.site-adr .item:last-child,
+.characteristics-list .item:last-child,
+.specialisation-list .item:last-child {
     margin-right: 0;
 }
+
 .site-nav .link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
     display: block;
 }
 
@@ -67,11 +79,12 @@ body {
 
 .site-nav .link-current {
     color: var(--accent-color);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: block;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    /* display: block; */
 }
 .main-nav {
+        display: flex;
     align-items: center;
     margin-left: 70px;
 }
@@ -89,8 +102,8 @@ margin-left: 12px;
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
     display: block;
 }
 .site-adr .link:hover,
@@ -106,7 +119,7 @@ margin-left: 12px;
 }
 /* Header container */
 .container{
-    display: flex;
+    /* display: flex; */
     width: 1200px;
       margin-left: auto;
   margin-right: auto;
@@ -136,6 +149,12 @@ margin-left: 12px;
       padding-top: 94px;
   padding-bottom: 94px;
 }
+.spec-sec {
+  padding-top: 0;
+}
+.par-sec {
+    background-color: var(--por-sel-background);
+}
 .section-title {
     color: var(--title-text-color);
     font-weight: bold;
@@ -147,9 +166,32 @@ margin-left: 12px;
 /* characteristics (features) */
 /* Examples (work)*/
 .characteristics-list,
-.specialisation-list,
-.team-list{
+.specialisation-list, /*Чем мы занимаемся*/
+.team-list{             /*Наша команда*/
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.team-list-item {
+    background: var(--primary-white-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+        0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    /* flex-basis: 250px; */
+}
+.team-list-description{
+    padding: 30px 0;
 }
 .characteristics-list .title,
 .specialisation-list .title {
@@ -176,13 +218,17 @@ margin-left: 12px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
+    margin-bottom: 10px;
 }
+
 /* Paragraph */
 .paragraph{
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+       text-align: center;
 }
 /* Button */
 
@@ -217,7 +263,7 @@ margin-left: 12px;
 /* address */
 .address{
     font-style: normal;
-    background: var(--hero-bakcground);
+
     color: var(--primary-white-color);
 }
 /* footer adr */
@@ -229,7 +275,10 @@ margin-left: 12px;
     text-decoration: none;
 
 }
-
+.footer {
+        background: var(--hero-bakcground);
+        padding-bottom: 150px;
+}
 
 .footer-adr .link-current {
     color: var(--accent-color);
@@ -280,12 +329,19 @@ margin-left: 12px;
 }
 .flex-element{
     width: 380px;
-    margin-right: 30;
-    margin-bottom: 30;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 .flex-element:nth-child(3n) {
     margin-right: 0;
 }
 .flex-element:nth-child(-n + 3){
     margin-right: 0;
+}
+
+.header {
+    padding: 25px 0;
+}
+li {
+    margin-right: 30px;
 }
